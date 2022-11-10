@@ -1,27 +1,18 @@
 
 .header {
-    /*position: fixed;*/
-    /*width: 100%;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*z-index: 10;*/
-    height: 10rem;
+    /*height: 7rem;*/
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    flex-direction: column;
 }
 
 .left-items {
-    /*position: absolute;*/
-    /*width: 35%;*/
     margin-left: 5%;
     height: 100%;
     flex: 2;
 }
 
 .right-items {
-    /*position: absolute;*/
-    /*width: 35%;*/
-    /*left: 50%;*/
     height: 100%;
     margin-right: 5%;
     flex: 2;

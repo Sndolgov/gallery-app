@@ -6,12 +6,12 @@ const Header = (props) => {
 
     return (
         <header className={styles.header}>
-            <div className={styles['left-items']}>
-                <MenuBar items={props.menuItems.left}/>
-            </div>
+            {/*<div className={styles['left-items']}>*/}
+            {/*    <MenuBar items={props.menuItems.left}/>*/}
+            {/*</div>*/}
             <Logo/>
             <div className={styles['right-items']}>
-                <MenuBar items={props.menuItems.right}/>
+                <MenuBar items={[...props.menuItems.right, ...props.menuItems.left]}/>
             </div>
         </header>
     )
