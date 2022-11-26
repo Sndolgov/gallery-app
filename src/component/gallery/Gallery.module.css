@@ -1,0 +1,15 @@
+.gallery {
+    margin-top: 5rem;
+    display: flex;
+}
+
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column img {
+    /*width:  350px;*/
+}

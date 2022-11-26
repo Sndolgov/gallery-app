@@ -8,6 +8,8 @@ import About from "./component/about/About";
 import Insta from "./component/insta/Insta";
 import Shop from "./component/shop/Shop";
 import Work from "./component/work/Work";
+import MainBackground from "./component/infrastructure/MainBackground";
+import Gallery from "./component/gallery/Gallery";
 
 
 const menuItems = {
@@ -27,12 +29,15 @@ function App() {
 
     return (
         <div className={styles.main}>
-            <Header menuItems={menuItems}/>
-            <Home/>
-            {/*<Header menuItems={menuItems}/>*/}
-            {/*<Routes>*/}
-            {/*    <Route path={"/"} element={<Home/>}/>*/}
-            {/*</Routes>*/}
+            <MainBackground/>
+                <Header menuItems={menuItems}/>
+                <Gallery/>
+                {/*<Home/>*/}
+                {/*<Header menuItems={menuItems}/>*/}
+                {/*<Routes>*/}
+                {/*    <Route path={"/"} element={<Home/>}/>*/}
+                {/*</Routes>*/}
+            {/*</MainBackground>*/}
         </div>
     );
 }
